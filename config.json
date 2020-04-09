@@ -8,7 +8,7 @@
       "title": "Sunday 8:00 am",
       "day": "Sun",
       "start_time": "08:00",
-      "duration": "70",
+      "duration": 70,
       "show_selection": true,
       "event": [
         {
@@ -25,7 +25,7 @@
       "title": "Sunday 9:30 am",
       "day": "Sun",
       "start_time": "09:30",
-      "duration": "70",
+      "duration": 70,
       "show_selection": true,
       "event": [
         {
@@ -42,7 +42,7 @@
       "title": "Sunday 11:00 am",
       "day": "Sun",
       "start_time": "11:00",
-      "duration": "70",
+      "duration": 70,
       "show_selection": true,
       "event": [
         {
@@ -59,7 +59,7 @@
       "title": "Monday Morning Study",
       "day": "Mon",
       "start_time": "07:00",
-      "duration": "90",
+      "duration": 90,
       "show_selection": false,
       "event": [
         {
@@ -72,7 +72,7 @@
       "title": "Monday Noon Broadcast",
       "day": "Mon",
       "start_time": "12:15",
-      "duration": "90",
+      "duration": 90,
       "show_selection": false,
       "event": [
         {
@@ -85,7 +85,7 @@
       "title": "Tuesday Morning Study",
       "day": "Tue",
       "start_time": "09:30",
-      "duration": "45",
+      "duration": 45,
       "show_selection": false,
       "event": [
         {
@@ -98,7 +98,7 @@
       "title": "7@7",
       "day": "Tue, Thu",
       "start_time": "19:00",
-      "duration": "7",
+      "duration": 7,
       "show_selection": false,
       "event": [
         {
@@ -111,7 +111,7 @@
       "title": "Point/Counterpoint",
       "day": "Wed",
       "start_time": "18:00",
-      "duration": "55",
+      "duration": 55,
       "show_selection": false,
       "event": [
         {
@@ -124,7 +124,7 @@
       "title": "Saturday Night Broadcast",
       "day": "Sat",
       "start_time": "17:30",
-      "duration": "75",
+      "duration": 75,
       "show_selection": false,
       "event": [
         {
