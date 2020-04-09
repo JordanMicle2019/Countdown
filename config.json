@@ -132,6 +132,19 @@
           "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
         }
       ]
+    },
+    {
+      "title": "Test Event",
+      "day": "Thu",
+      "start_time": "13:00",
+      "duration": 70,
+      "show_selection": false,
+      "event": [
+        {
+          "label": "",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/ebzsTZ_fYjz1"
+        }
+      ]
     }
   ]
 }
