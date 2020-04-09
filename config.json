@@ -1,8 +1,8 @@
 {
-  "isVideo": "false",
+  "isVideo": false,
   "video_url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
   "image_url": "https://www.socwall.com/images/wallpapers/86794-2560x1440.jpg",
-  "showStreamSelection": "false",
+  "showStreamSelection": false,
   "stream_1_url": "//link.theplatform.com/s/FkEREC/media/a0siLI_f2WUh?formats=m3u",
   "stream_2_url": "//link.theplatform.com/s/vwUEeC/media/F7Kp_b0_ukh8?formats=m3u&policy=105625629"
 }
