@@ -2,9 +2,149 @@
   "isVideo": true,
   "video_url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
   "image_url": "https://www.socwall.com/images/wallpapers/86794-2560x1440.jpg",
-  "showStreamSelection": false,
-  "stream_1_label": "stream_1",
-  "stream_1_url": "//link.theplatform.com/s/FkEREC/media/a0siLI_f2WUh?formats=m3u",
-  "stream_2_label": "stream_1",
-  "stream_2_url": "//link.theplatform.com/s/vwUEeC/media/F7Kp_b0_ukh8?formats=m3u&policy=105625629"
+  "timezone": "America/Dallas",
+  "events": [
+    {
+      "title": "Sunday 8:00 am",
+      "day": "Sun",
+      "start_time": "08:00",
+      "duration": "70",
+      "show_selection": true,
+      "event": [
+        {
+          "label": "Traditional",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/TttVXK1zYX_u"
+        },
+        {
+          "label": "Contemporary",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
+        }
+      ]
+    },
+    {
+      "title": "Sunday 9:30 am",
+      "day": "Sun",
+      "start_time": "09:30",
+      "duration": "70",
+      "show_selection": true,
+      "event": [
+        {
+          "label": "Traditional",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/TttVXK1zYX_u"
+        },
+        {
+          "label": "Contemporary",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
+        }
+      ]
+    },
+    {
+      "title": "Sunday 11:00 am",
+      "day": "Sun",
+      "start_time": "11:00",
+      "duration": "70",
+      "show_selection": true,
+      "event": [
+        {
+          "label": "Traditional",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/TttVXK1zYX_u"
+        },
+        {
+          "label": "Contemporary",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
+        }
+      ]
+    },
+    {
+      "title": "Monday Morning Study",
+      "day": "Mon",
+      "start_time": "07:00",
+      "duration": "90",
+      "show_selection": false,
+      "event": [
+        {
+          "label": "",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/rx7__qySLvyo"
+        }
+      ]
+    },
+    {
+      "title": "Monday Noon Broadcast",
+      "day": "Mon",
+      "start_time": "12:15",
+      "duration": "90",
+      "show_selection": false,
+      "event": [
+        {
+          "label": "",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/rx7__qySLvyo"
+        }
+      ]
+    },
+    {
+      "title": "Tuesday Morning Study",
+      "day": "Tue",
+      "start_time": "09:30",
+      "duration": "45",
+      "show_selection": false,
+      "event": [
+        {
+          "label": "",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/rx7__qySLvyo"
+        }
+      ]
+    },
+    {
+      "title": "7@7",
+      "day": "Tue, Thu",
+      "start_time": "19:00",
+      "duration": "7",
+      "show_selection": false,
+      "event": [
+        {
+          "label": "",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/ebzsTZ_fYjz1"
+        }
+      ]
+    },
+    {
+      "title": "Point/Counterpoint",
+      "day": "Wed",
+      "start_time": "18:00",
+      "duration": "55",
+      "show_selection": false,
+      "event": [
+        {
+          "label": "",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/ebzsTZ_fYjz1"
+        }
+      ]
+    },
+    {
+      "title": "7@7",
+      "day": "Tue, Thu",
+      "start_time": "19:00",
+      "duration": "7",
+      "show_selection": false,
+      "event": [
+        {
+          "label": "",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/ebzsTZ_fYjz1"
+        }
+      ]
+    },
+    {
+      "title": "Saturday Night Broadcast",
+      "day": "Sat",
+      "start_time": "17:30",
+      "duration": "75",
+      "show_selection": false,
+      "event": [
+        {
+          "label": "",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
+        }
+      ]
+    }
+  ]
 }
