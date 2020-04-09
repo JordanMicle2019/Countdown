@@ -137,7 +137,7 @@
       "title": "test event",
       "day": "Thu",
       "start_time": "12:00",
-      "duration": 70,
+      "duration": 90,
       "show_selection": false,
       "event": [
         {
