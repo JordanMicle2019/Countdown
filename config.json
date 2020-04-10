@@ -1,6 +1,6 @@
 {
   "isVideo": true,
-  "video_url": "https://ikonik-a.akamaihd.net/examples/octagon.mp4",
+  "video_url": "https://ikonik-a.akamaihd.net/examples/octagon_audio.mp4",
   "image_url": "https://www.socwall.com/images/wallpapers/86794-2560x1440.jpg",
   "timezone": "America/Chicago",
   "events": [
@@ -134,9 +134,9 @@
       ]
     },
     {
-      "title": "Saturday Night Broadcast",
+      "title": "audio test",
       "day": "Sat",
-      "start_time": "17:30",
+      "start_time": "10:43",
       "duration": 75,
       "show_selection": false,
       "event": [
