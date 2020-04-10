@@ -138,10 +138,14 @@
       "day": "Fri",
       "start_time": "02:30",
       "duration": 75,
-      "show_selection": false,
+      "show_selection": true,
       "event": [
         {
-          "label": "",
+          "label": "Traditional",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/TttVXK1zYX_u"
+        },
+        {
+          "label": "Contemporary",
           "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
         }
       ]
