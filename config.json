@@ -136,7 +136,7 @@
     {
       "title": "Saturday Night Broadcast test1",
       "day": "Fri",
-      "start_time": "10:00",
+      "start_time": "10:19",
       "duration": 5,
       "show_selection": true,
       "event": [
@@ -146,7 +146,7 @@
         },
         {
           "label": "Contemporary",
-          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/embed/select/media/pIB00fyqBcpV?form=html"
         }
       ]
     }
