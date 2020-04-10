@@ -135,7 +135,7 @@
     },
     {
       "title": "Saturday Night Broadcast test1",
-      "day": "Sat",
+      "day": "Fri",
       "start_time": "06:25",
       "duration": 1,
       "show_selection": false,
@@ -148,7 +148,7 @@
     },
     {
       "title": "Saturday Night Broadcast test1",
-      "day": "Sat",
+      "day": "Fri",
       "start_time": "06:28",
       "duration": 1,
       "show_selection": true,
