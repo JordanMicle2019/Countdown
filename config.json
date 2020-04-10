@@ -132,36 +132,6 @@
           "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
         }
       ]
-    },
-    {
-      "title": "test",
-      "day": "Fri",
-      "start_time": "06:10",
-      "duration": 1,
-      "show_selection": false,
-      "event": [
-        {
-          "label": "",
-          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
-        }
-      ]
-    },
-    {
-      "title": "test1",
-      "day": "Fri",
-      "start_time": "06:15",
-      "duration": 1,
-      "show_selection": true,
-      "event": [
-        {
-          "label": "Traditional",
-          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/TttVXK1zYX_u"
-        },
-        {
-          "label": "Contemporary",
-          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
-        }
-      ]
     }
   ]
 }
