@@ -136,8 +136,21 @@
     {
       "title": "test event",
       "day": "Fri",
-      "start_time": "02:45",
+      "start_time": "02:30",
       "duration": 75,
+      "show_selection": false,
+      "event": [
+        {
+          "label": "",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
+        }
+      ]
+    },
+    {
+      "title": "test event111",
+      "day": "Fri",
+      "start_time": "02:00",
+      "duration": 90,
       "show_selection": false,
       "event": [
         {
