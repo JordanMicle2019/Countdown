@@ -132,19 +132,6 @@
           "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
         }
       ]
-    },
-    {
-      "title": "audio test",
-      "day": "Fri",
-      "start_time": "10:44",
-      "duration": 75,
-      "show_selection": false,
-      "event": [
-        {
-          "label": "",
-          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
-        }
-      ]
     }
   ]
 }
