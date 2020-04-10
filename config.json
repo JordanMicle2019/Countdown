@@ -136,8 +136,8 @@
     {
       "title": "Saturday Night Broadcast test1",
       "day": "Fri",
-      "start_time": "08:40",
-      "duration": 2,
+      "start_time": "09:45",
+      "duration": 1,
       "show_selection": true,
       "event": [
         {
@@ -153,8 +153,8 @@
     {
       "title": "Saturday Night Broadcast test2",
       "day": "Fri",
-      "start_time": "08:44",
-      "duration": 2,
+      "start_time": "09:47",
+      "duration": 1,
       "show_selection": false,
       "event": [
         {
