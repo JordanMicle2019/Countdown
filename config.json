@@ -136,7 +136,7 @@
     {
       "title": "test",
       "day": "Fri",
-      "start_time": "22:00",
+      "start_time": "22:43",
       "duration": 2,
       "show_selection": false,
       "event": [
@@ -149,7 +149,7 @@
     {
       "title": "test1",
       "day": "Fri",
-      "start_time": "21:58",
+      "start_time": "22:47",
       "duration": 2,
       "show_selection": true,
       "event": [
