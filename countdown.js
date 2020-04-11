@@ -146,10 +146,16 @@ function handler() {
 						</video>
 					`;
           countdownContainer.innerHTML = content + videoConfing;
-          insertAfter(document.querySelector("iframe"), countdownContainer);
+          insertAfter(
+            document.querySelector("#videoCountdown"),
+            countdownContainer
+          );
         } else {
           countdownContainer.innerHTML = content;
-          insertAfter(document.querySelector("iframe"), countdownContainer);
+          insertAfter(
+            document.querySelector("#videoCountdown"),
+            countdownContainer
+          );
         }
 
         $("#selection-container").css({
@@ -159,9 +165,9 @@ function handler() {
           "max-width": "100%",
         });
 
-        $("#stream-selection-container").width($("iframe").width());
-        $("#stream-selection-container").height($("iframe").height());
-        $("iframe").remove();
+        $("#stream-selection-container").width($("#videoCountdown").width());
+        $("#stream-selection-container").height($("#videoCountdown").height());
+        $("#videoCountdown").remove();
 
         if (runningEvent) {
           runCountDown(runningEvent);
@@ -226,8 +232,8 @@ function handler() {
   }
 
   $(window).resize(function () {
-    $("#stream-selection-container").width($("iframe").width());
-    $("#stream-selection-container").height($("iframe").height());
+    $("#stream-selection-container").width($("#videoCountdown").width());
+    $("#stream-selection-container").height($("#videoCountdown").height());
   });
 
   function getFinishTime(targetEvent) {
