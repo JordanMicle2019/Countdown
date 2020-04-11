@@ -75,16 +75,25 @@ function handler() {
   countdownContainer.id = "stream-selection-container";
 
   $(document).ready(function () {
-    $.getJSON(
-      "https://jordanmicle2019.github.io/Countdown/config.json",
-      function (res) {
+    $.ajax({
+      url: "https://jordanmicle2019.github.io/Countdown/config.json",
+      cache: false,
+      dataType: "json",
+      success: function (res) {
         var [currentWeekDay, currentShortTime] = getTargetCountryTime();
 
         for (event of res.events) {
           if (event.day.includes(",")) {
             var days = event.day.split(",");
             for (day of days) {
-              var temp = { ...event, day: day.replace(/ /g, "") };
+              var temp = {
+                title: event.title,
+                day: day.replace(/ /g, ""),
+                start_time: event.start_time,
+                duration: event.duration,
+                show_selection: event.show_selection,
+                event: event.event,
+              };
               eventDifferences.push(
                 getTimeDifference(
                   temp,
@@ -105,7 +114,6 @@ function handler() {
             schedule.push(event);
           }
         }
-
         setEventStatus();
 
         var content = `
@@ -169,8 +177,7 @@ function handler() {
           upCountDown(upCommingEvent);
         }
       },
-      { _: new Date().getTime() }
-    );
+    });
   });
 
   function resetWorkflow() {
@@ -225,6 +232,16 @@ function handler() {
     return Math.floor(grandTotal / 60) + ":" + (grandTotal % 60);
   }
 
+  // Section-1 load
+  $(document).on("click", "#section-1", function () {
+    replaceIframeWithDiv(runningEvent.event[0].src);
+  });
+
+  // Section-2 load
+  $(document).on("click", "#section-2", function () {
+    replaceIframeWithDiv(runningEvent.event[1].src);
+  });
+
   function replaceIframeWithDiv(src) {
     var frameContainer = document.createElement("div");
     frameContainer.id = "frame-container";
@@ -243,12 +260,13 @@ function handler() {
   }
 
   function upCountDown(targetEvent) {
+    // Update the count down every 1 second
     var x = setInterval(function () {
       var [currentWeekDay, currentShortTime] = getTargetCountryTime();
       distance =
         getTimeDifference(targetEvent, currentWeekDay, currentShortTime) * 1000;
       var [days, hours, minutes, seconds] = convertSecondToTime(distance);
-      // If the count down is finished, write set events again
+      // If the count down is finished, write some text
       if (distance < 0) {
         clearInterval(x);
         resetWorkflow();
@@ -289,27 +307,17 @@ function handler() {
 
   function runCountDown(targetEvent) {
     var x = setInterval(function () {
+      var totalText = "";
       var [currentWeekDay, currentShortTime] = getTargetCountryTime();
-      var distance =
+      distance =
         getFinishSecond(getFinishTime(targetEvent), currentShortTime) * 1000;
-
-      // If the count down is finished, write set events again
       if (distance < 0) {
         clearInterval(x);
         resetWorkflow();
       }
 
+      // Display the result in the element with id="demo"
       document.getElementById("countdown").innerHTML = "";
     }, 1000);
   }
-
-  // Section-1 load
-  $(document).on("click", "#section-1", function () {
-    replaceIframeWithDiv(runningEvent.event[0].src);
-  });
-
-  // Section-2 load
-  $(document).on("click", "#section-2", function () {
-    replaceIframeWithDiv(runningEvent.event[1].src);
-  });
 }
