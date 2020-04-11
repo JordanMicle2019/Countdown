@@ -132,23 +132,6 @@
           "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
         }
       ]
-    },
-    {
-      "title": "Test",
-      "day": "Fri",
-      "start_time": "20:20",
-      "duration": 70,
-      "show_selection": true,
-      "event": [
-        {
-          "label": "Traditional",
-          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/TttVXK1zYX_u"
-        },
-        {
-          "label": "Contemporary",
-          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
-        }
-      ]
     }
   ]
 }
