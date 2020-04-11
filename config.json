@@ -132,66 +132,6 @@
           "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
         }
       ]
-    },
-    {
-      "title": "Test for show selection true",
-      "day": "Sat",
-      "start_time": "13:05",
-      "duration": 5,
-      "show_selection": true,
-      "event": [
-        {
-          "label": "Traditional",
-          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/TttVXK1zYX_u"
-        },
-        {
-          "label": "Contemporary",
-          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
-        }
-      ]
-    },
-    {
-      "title": "Test for show selection false",
-      "day": "Sat",
-      "start_time": "13:15",
-      "duration": 5,
-      "show_selection": false,
-      "event": [
-        {
-          "label": "",
-          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/rx7__qySLvyo"
-        }
-      ]
-    },
-    {
-      "title": "Test for show selection true",
-      "day": "Sat",
-      "start_time": "13:25",
-      "duration": 5,
-      "show_selection": true,
-      "event": [
-        {
-          "label": "Traditional",
-          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/TttVXK1zYX_u"
-        },
-        {
-          "label": "Contemporary",
-          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
-        }
-      ]
-    },
-    {
-      "title": "Test for show selection false",
-      "day": "Sat",
-      "start_time": "13:35",
-      "duration": 5,
-      "show_selection": false,
-      "event": [
-        {
-          "label": "",
-          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/rx7__qySLvyo"
-        }
-      ]
     }
   ]
 }
