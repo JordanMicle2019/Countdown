@@ -12,6 +12,7 @@ function handler() {
   var eventDifferences = [];
   var upCommingEvent = "";
   var runningEvent = "";
+  var imageResponse = "";
 
   var weekDays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
@@ -81,6 +82,7 @@ function handler() {
       dataType: "json",
       success: function (res) {
         var [currentWeekDay, currentShortTime] = getTargetCountryTime();
+        imageResponse = res.image_url;
 
         for (event of res.events) {
           if (event.day.includes(",")) {
@@ -118,7 +120,7 @@ function handler() {
 
         var content = `
 					<div id="countdown-container" class="display-top" style="width:100%">
-						<p class="custom-font-style">Coming Up Next: <span id="up_event_name"></span></p>
+						<p class="custom-font-style" style="margin-bottom: -10px">Coming Up Next: <span id="up_event_name"></span></p>
 							<p class="custom-font-style">Begins in: <span id="countdown"></span></p>
 						</div>				
 						<div id="selection-container" class="display-top">
@@ -167,10 +169,20 @@ function handler() {
             $("#selection-container").show();
             $("#section-1").text(runningEvent.event[0].label);
             $("#section-2").text(runningEvent.event[1].label);
+            $("#landing-video").hide();
+            $("#stream-selection-container").css({
+              background: "url(" + imageUrl + ")",
+              "background-repeat": "no-repeat",
+              "background-size": "100%",
+            });
           } else {
             replaceIframeWithDiv(runningEvent.event[0].src);
           }
         } else {
+          $("#landing-video").show();
+          $("#stream-selection-container").css({
+            background: "transparent",
+          });
           $("#countdown-container").show();
           $("#selection-container").hide();
           $("#up_event_name").text(upCommingEvent.title);
@@ -207,10 +219,20 @@ function handler() {
         $("#selection-container").show();
         $("#section-1").text(runningEvent.event[0].label);
         $("#section-2").text(runningEvent.event[1].label);
+        $("#landing-video").hide();
+        $("#stream-selection-container").css({
+          background: "url(" + imageUrl + ")",
+          "background-repeat": "no-repeat",
+          "background-size": "100%",
+        });
       } else {
         replaceIframeWithDiv(runningEvent.event[0].src);
       }
     } else {
+      $("#landing-video").show();
+      $("#stream-selection-container").css({
+        background: "transparent",
+      });
       $("#countdown-container").show();
       $("#selection-container").hide();
       $("#up_event_name").text(upCommingEvent.title);
@@ -274,10 +296,22 @@ function handler() {
       }
       // Display the result in the element with id="demo"
       var timeText = ``;
-      if (days) timeText += `${days} <span class="mini">days </span>`;
-      if (hours) timeText += `${hours} <span class="mini">hours </span>`;
-      if (minutes) timeText += `${minutes} <span class="mini">minutes </span>`;
-      timeText += `${seconds} <span class="mini">seconds </span>`;
+      if (days) {
+        if (days == 1) timeText += `${days} <span class="mini">day </span>`;
+        else timeText += `${days} <span class="mini">days </span>`;
+      }
+      if (hours) {
+        if (hours == 1) timeText += `${hours} <span class="mini">hour </span>`;
+        else timeText += `${hours} <span class="mini">hours </span>`;
+      }
+      if (minutes) {
+        if (minutes == 1)
+          timeText += `${minutes} <span class="mini">minute </span>`;
+        else timeText += `${minutes} <span class="mini">minutes </span>`;
+      }
+      if (seconds == 1)
+        timeText += `${seconds} <span class="mini">second </span>`;
+      else timeText += `${seconds} <span class="mini">seconds </span>`;
 
       document.getElementById("countdown").innerHTML = timeText;
     }, 1000);
