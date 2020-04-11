@@ -176,9 +176,6 @@ function handler() {
           }
         } else {
           $("#landing-video").show();
-          $("#stream-selection-container").css({
-            background: "transparent",
-          });
           $("#countdown-container").show();
           $("#selection-container").hide();
           $("#up_event_name").text(upCommingEvent.title);
@@ -221,9 +218,6 @@ function handler() {
       }
     } else {
       $("#landing-video").show();
-      $("#stream-selection-container").css({
-        background: "transparent",
-      });
       $("#countdown-container").show();
       $("#selection-container").hide();
       $("#up_event_name").text(upCommingEvent.title);
