@@ -150,13 +150,14 @@ function handler() {
         } else {
           countdownContainer.innerHTML = content;
           insertAfter(document.querySelector("iframe"), countdownContainer);
-          var imageUrl = res.image_url;
-          $("#stream-selection-container").css({
-            background: "url(" + imageUrl + ")",
-            "background-repeat": "no-repeat",
-            "background-size": "100%",
-          });
         }
+
+        $("#selection-container").css({
+          background: "url(" + imageResponse + ")",
+          "background-repeat": "no-repeat",
+          "background-size": "100%",
+          "max-width": "100%",
+        });
 
         $("#stream-selection-container").width($("iframe").width());
         $("#stream-selection-container").height($("iframe").height());
@@ -170,11 +171,6 @@ function handler() {
             $("#section-1").text(runningEvent.event[0].label);
             $("#section-2").text(runningEvent.event[1].label);
             $("#landing-video").hide();
-            $("#stream-selection-container").css({
-              background: "url(" + imageUrl + ")",
-              "background-repeat": "no-repeat",
-              "background-size": "100%",
-            });
           } else {
             replaceIframeWithDiv(runningEvent.event[0].src);
           }
@@ -220,11 +216,6 @@ function handler() {
         $("#section-1").text(runningEvent.event[0].label);
         $("#section-2").text(runningEvent.event[1].label);
         $("#landing-video").hide();
-        $("#stream-selection-container").css({
-          background: "url(" + imageUrl + ")",
-          "background-repeat": "no-repeat",
-          "background-size": "100%",
-        });
       } else {
         replaceIframeWithDiv(runningEvent.event[0].src);
       }
