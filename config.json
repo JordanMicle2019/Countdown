@@ -134,9 +134,9 @@
       ]
     },
     {
-      "title": "Sunday 11:00 am",
+      "title": "Test",
       "day": "Fri",
-      "start_time": "15:00",
+      "start_time": "20:20",
       "duration": 70,
       "show_selection": true,
       "event": [
