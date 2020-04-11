@@ -132,6 +132,36 @@
           "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
         }
       ]
+    },
+    {
+      "title": "Test for show selection true",
+      "day": "Sat",
+      "start_time": "11:30",
+      "duration": 10,
+      "show_selection": true,
+      "event": [
+        {
+          "label": "Traditional",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/TttVXK1zYX_u"
+        },
+        {
+          "label": "Contemporary",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/_NpEbRvA81rP"
+        }
+      ]
+    },
+    {
+      "title": "Test for show selection false",
+      "day": "Sat",
+      "start_time": "11:45",
+      "duration": 10,
+      "show_selection": false,
+      "event": [
+        {
+          "label": "",
+          "src": "https://player.theplatform.com/p/FkEREC/cibEBsX582uU/select/media/rx7__qySLvyo"
+        }
+      ]
     }
   ]
 }
