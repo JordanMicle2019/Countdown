@@ -63,8 +63,6 @@ function handler() {
     var minDifference = Math.min.apply(null, eventDifferences);
     if (minDifference > 0) {
       upCommingEvent = schedule[eventDifferences.indexOf(minDifference)];
-    } else if (minDifference == 0) {
-      console.log("some event started");
     } else {
       var tempEvent = schedule[eventDifferences.indexOf(minDifference)];
       runningEvent = tempEvent;
@@ -77,7 +75,7 @@ function handler() {
 
   $(document).ready(function () {
     $.ajax({
-      url: "https://jordanmicle2019.github.io/Countdown/config.json",
+      url: "https://stor.ikonik.com/reach/46/countdown/config.json",
       cache: false,
       dataType: "json",
       success: function (res) {
