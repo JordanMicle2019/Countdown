@@ -73,7 +73,7 @@ function handler() {
   var countdownContainer = document.createElement("div");
   countdownContainer.id = "stream-selection-container";
 
-  $(document).ready(function () {
+  function initalizeCountDown() {
     $.ajax({
       url: "https://stor.ikonik.com/reach/46/countdown/config.json",
       cache: false,
@@ -117,32 +117,32 @@ function handler() {
         setEventStatus();
 
         var content = `
-					<div id="countdown-container" class="display-top" style="width:100%">
-						<p class="custom-font-style" style="margin-bottom: -10px">Coming Up Next: <span id="up_event_name"></span></p>
-							<p class="custom-font-style">Begins in: <span id="countdown"></span></p>
-						</div>				
-						<div id="selection-container" class="display-top">
-							<div style="width: 100%;height: 100%;background: #312020a1;border-radius:5px">
-								<p class="custom-font-style" style="padding: 10px;text-align: center;border-bottom: 1px solid white;margin-left: 20px;margin-right: 20px;">Choose Your Service Preference</p>
-								<div class="custom-center" style="margin-top: 15%;">
-									<div class="section-1 btn-container custom-center">
-										<button id="section-1" class="custom-btn"></button>						
-									</div>
-									<div class="section-2 btn-container custom-center">
-										<button id="section-2" class="custom-btn"></button>							
-									</div>	
-								</div>
-							</div>
-						</div>									
-					`;
+            <div id="countdown-container" class="display-top" style="width:100%">
+              <p class="custom-font-style" style="margin-bottom: -10px">Coming Up Next: <span id="up_event_name"></span></p>
+                <p class="custom-font-style">Begins in: <span id="countdown"></span></p>
+              </div>				
+              <div id="selection-container" class="display-top">
+                <div style="width: 100%;height: 100%;background: #312020a1;border-radius:5px">
+                  <p class="custom-font-style" style="padding: 10px;text-align: center;border-bottom: 1px solid white;margin-left: 20px;margin-right: 20px;">Choose Your Service Preference</p>
+                  <div class="custom-center" style="margin-top: 15%;">
+                    <div class="section-1 btn-container custom-center">
+                      <button id="section-1" class="custom-btn"></button>						
+                    </div>
+                    <div class="section-2 btn-container custom-center">
+                      <button id="section-2" class="custom-btn"></button>							
+                    </div>	
+                  </div>
+                </div>
+              </div>									
+            `;
 
         if (res.isVideo) {
           var videoUrl = res.video_url;
           var videoConfing = `
-						<video id="landing-video" autoplay muted loop class="bg-video" style="max-width:100%;max-height:100%;position:absolute;top:0;z-index:1">
-							<source src="${videoUrl}" type="video/mp4" />
-						</video>
-					`;
+              <video id="landing-video" autoplay muted loop class="bg-video" style="max-width:100%;max-height:100%;position:absolute;top:0;z-index:1">
+                <source src="${videoUrl}" type="video/mp4" />
+              </video>
+            `;
           countdownContainer.innerHTML = content + videoConfing;
           insertAfter(
             document.querySelector("#videoCountdown"),
@@ -187,7 +187,9 @@ function handler() {
         }
       },
     });
-  });
+  }
+
+  initalizeCountDown();
 
   function resetWorkflow() {
     runningEvent = "";
