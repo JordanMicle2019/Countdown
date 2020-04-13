@@ -257,9 +257,8 @@ function handler() {
     var frameContainer = document.createElement("div");
     frameContainer.id = "frame-container";
     frameContainer.innerHTML = `
-					<iframe id="player" width="100%" height="100%" src="${src}"
-					onload="$pdk.bind(this, true); $pdk.controller.setIFrame(this, true);" frameborder="0" allow="autoplay"
-					seamless="seamless" allowFullScreen></iframe>				
+					<iframe id="player" width="100%" height="100%" src="${src}?autoPlay=true"
+					frameborder="0" allowfullscreen="true"></iframe>				
 				`;
     insertAfter(
       document.querySelector("#stream-selection-container"),
